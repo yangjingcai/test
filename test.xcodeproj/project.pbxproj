@@ -15,6 +15,8 @@
 		FE35FE1F1D9260F200357149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE35FE1D1D9260F200357149 /* LaunchScreen.storyboard */; };
 		FE35FE2A1D9260F200357149 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35FE291D9260F200357149 /* testTests.m */; };
 		FE35FE351D9260F200357149 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35FE341D9260F200357149 /* testUITests.m */; };
+		FEC4544A1E836E3800638E3A /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC454481E836E3800638E3A /* ViewController2.m */; };
+		FEC4544B1E836E3800638E3A /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEC454491E836E3800638E3A /* ViewController2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		FE35FE301D9260F200357149 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE35FE341D9260F200357149 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		FE35FE361D9260F200357149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC454471E836E3800638E3A /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController2.h; path = test/ViewController2.h; sourceTree = "<group>"; };
+		FEC454481E836E3800638E3A /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController2.m; path = test/ViewController2.m; sourceTree = "<group>"; };
+		FEC454491E836E3800638E3A /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController2.xib; path = test/ViewController2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 		FE35FE031D9260F100357149 = {
 			isa = PBXGroup;
 			children = (
+				FEC454471E836E3800638E3A /* ViewController2.h */,
+				FEC454481E836E3800638E3A /* ViewController2.m */,
+				FEC454491E836E3800638E3A /* ViewController2.xib */,
 				FE35FE0E1D9260F100357149 /* test */,
 				FE35FE281D9260F200357149 /* testTests */,
 				FE35FE331D9260F200357149 /* testUITests */,
@@ -207,6 +215,8 @@
 				TargetAttributes = {
 					FE35FE0B1D9260F100357149 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5TLQ33EWV6;
+						ProvisioningStyle = Automatic;
 					};
 					FE35FE241D9260F200357149 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -244,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE35FE1F1D9260F200357149 /* LaunchScreen.storyboard in Resources */,
+				FEC4544B1E836E3800638E3A /* ViewController2.xib in Resources */,
 				FE35FE1C1D9260F200357149 /* Assets.xcassets in Resources */,
 				FE35FE1A1D9260F200357149 /* Main.storyboard in Resources */,
 			);
@@ -271,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE35FE171D9260F200357149 /* ViewController.m in Sources */,
+				FEC4544A1E836E3800638E3A /* ViewController2.m in Sources */,
 				FE35FE141D9260F200357149 /* AppDelegate.m in Sources */,
 				FE35FE111D9260F100357149 /* main.m in Sources */,
 			);
@@ -415,6 +427,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5TLQ33EWV6;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dachong.test;
@@ -426,6 +440,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5TLQ33EWV6;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dachong.test;
@@ -498,6 +514,7 @@
 				FE35FE3B1D9260F200357149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE35FE3C1D9260F200357149 /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +523,7 @@
 				FE35FE3E1D9260F200357149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE35FE3F1D9260F200357149 /* Build configuration list for PBXNativeTarget "testUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +532,7 @@
 				FE35FE411D9260F200357149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
